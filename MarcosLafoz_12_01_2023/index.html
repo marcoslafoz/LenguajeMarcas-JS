@@ -2,17 +2,25 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Plantilla</title>
-  <meta name="" content="" />
-  <link rel="stylesheet" type="text/css" href="estilos.css" />
-  <link rel="shortcut icon" href="" />
+  <title>INDEX</title>
 </head>
 
+<script src="./scripts/main.js"></script>
+
 <body>
-  <h1>Getting started with Javascript - 12/01/2023</h1>
-  <p id="introduccion">Prueba</p>
-  <script src="./scripts/main.js"></script>
+  <h3 id="primo">Veremos si el numero es primo</h3>
 </body>
+
+<script>
+  let contenedorPrimos = document.getElementById("primo");
+  let n =5; //Numero a analizar
+  if (esPrimo(n) === true) {
+    contenedorPrimos.innerHTML = "El numero " + n + " es primo";
+    console.log = "El numero " + n + " es primo.";
+  } else {
+    contenedorPrimos.innerHTML = "El numero " + n + " no es primo";
+    console.log = "El numero " + n + " no es primo.";
+  }
+</script>
 
 </html>

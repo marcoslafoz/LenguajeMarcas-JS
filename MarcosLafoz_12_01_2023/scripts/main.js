@@ -1,9 +1,8 @@
-//Variable
-var x = "Variable";
-//Constante
-const pi = 3.14;
-//Let
-let z = 43;
-
-//Alerta
-window.alert(x);
+function esPrimo(n) {
+    for (i = 2; i < n; i++) {
+       if (n % i === 0){
+        return false;
+       }
+    }
+    return true;
+}
