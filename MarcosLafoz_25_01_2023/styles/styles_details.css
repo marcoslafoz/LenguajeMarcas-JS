@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #8BC34A;
+  color: white;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+#map-section {
+  height: 300px;
+}
+
+#map {
+  height: 100%;
+}
+
+#info-section {
+  background-color: #CDDC39;
+  padding: 10px;
+}
+
+#info-section h2 {
+  margin: 0;
+}
+
+.info-card {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #E0F2F1;
+}
+
+#services-section {
+  background-color: #CDDC39;
+  padding: 10px;
+}
+
+#services-section h2 {
+  margin: 0;
+}

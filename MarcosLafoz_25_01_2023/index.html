@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Farmacias de guardia</title>
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+  <script src="./scripts/main.js"></script>
+</head>
+
+<body onload="manejadorEventoOnload()">
+  <header>
+    <h1 id="main-title">Farmacias de guardia</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+  <section id="search-section">
+    <form>
+      <label for="search">Buscar farmacias:</label>
+      <input type="text" id="search">
+      <input type="submit" value="Buscar">
+    </form>
+  </section>
+  <section id="results-section">
+    <div id="results-container" class="results-grid">
+      <div class="result">
+        <h2>Farmacia Central</h2>
+        <p>Dirección: Calle de la Farmacia, 12</p>
+        <p>Teléfono: 555-555-555</p>
+        <p>Horario: Lunes a viernes, 9:00 a 21:00</p>
+      </div>
+      <div class="result">
+        <h2>Farmacia del Norte</h2>
+        <p>Dirección: Calle del Norte, 34</p>
+        <p>Teléfono: 555-555-556</p>
+        <p>Horario: Lunes a viernes, 9:00 a 21:00</p>
+      </div>
+      <!-- Más resultados -->
+    </div>
+  </section>
+</body>
+
+</html>
