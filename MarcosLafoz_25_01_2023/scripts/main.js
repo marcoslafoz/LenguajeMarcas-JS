@@ -77,10 +77,18 @@ function metodoPintarFarmaciasGrid(response) {
         if (far.url) {
             htmlGenerado += '<a href="' + far.url + '" target="_blank">' + far.url + '</a>';
         }
+
+        htmlGenerado += '<p onclick="loadDetails(' + far.id + ')" class="mas-info" id="' + far.id + '">Más Informacion</p>';
         htmlGenerado += '</div>';
         contenedor.innerHTML = htmlGenerado;
     });
 
+}
+
+function loadDetails(codigo) {
+    window.alert(codigo);
+    localStorage.setItem('idFarmacia', codigo);
+    window.location = './details.html';
 }
 
 function peticionFetch(url, metodo, callback) {
@@ -104,4 +112,16 @@ function peticionFetch(url, metodo, callback) {
             console.error('Error al obtener los datos:', error);
         });
 
+}
+
+function manejadorLoadDetails() {
+    //Necesito saber el id de la farmacia
+    const id = localStorage.getItem("idFarmacia");
+    const url = "https://www.zaragoza.es/sede/servicio/farmacia/'+id+'?rf=html&srsname=wgs84%27";
+
+    peticionFetch(url, 'GET', pintarDetalles);
+}
+
+function pintarDetalles(datos) {
+    console.log(datos);
 }

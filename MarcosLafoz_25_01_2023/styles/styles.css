@@ -64,3 +64,7 @@ header nav a {
 .result h2 {
   margin: 0;
 }
+
+.mas-info {
+  cursor: pointer;
+}
