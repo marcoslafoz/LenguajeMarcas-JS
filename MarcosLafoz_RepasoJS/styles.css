@@ -1,0 +1,24 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.ej1Cont {
+    width: 100%;
+    height: 20px;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+.ej2Cont {
+    width: 100%;
+    height: 40px;
+    padding: 30px;
+    background-color: rgb(171, 208, 183);
+}
+
+.ej3Cont {
+    width: 100%;
+    height: 500px;
+    padding: 30px;
+}
