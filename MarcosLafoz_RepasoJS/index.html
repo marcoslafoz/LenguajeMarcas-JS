@@ -7,24 +7,16 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<script src="./scripts/script.js"></script>
+<script src="./script.js"></script>
 
-<!--1. Ejercicio de creación de objetos: Crea un objeto llamado "persona" que tenga las siguientes
-propiedades: nombre, apellido, edad y correo electrónico. Luego, crea una función que tome como
-parámetro un objeto "persona" y devuelva una cadena de texto que diga "Hola, mi nombre es
-[nombre] [apellido], tengo [edad] años y mi correo electrónico es [correo electrónico]".-->
-
-<!--2. Ejercicio de eventos del DOM: Crea una página web que tenga un botón. Al hacer clic en el botón, se
-debe mostrar un mensaje en la consola que diga "Hola mundo!".-->
-
-<!--3. Ejercicio de peticiones asíncronas mediante fetch: Crea una página web que tenga un botón. Al hacer
-clic en el botón, se debe realizar una petición a una API libre (por ejemplo, la API de citas de
-zenquotes.io) utilizando fetch. Luego, muestra las citas y sus autores aprovechando alguna de las
-plantillas que has generado en clase con flexbox y/o grid.-->
-
-<body onload="loadBody()">
+<body onload="loadEj1()">
     <div class="ej1Cont">
-        <center>Ejercicio 1</center>
+        <center>
+            <p>Ejercicio 1</p>
+        </center>
+        <center>
+            <p id="ej1"></p>
+        </center>
     </div>
 
     <div class="ej2Cont">
@@ -32,14 +24,21 @@ plantillas que has generado en clase con flexbox y/o grid.-->
             <p>Ejercicio 2</p>
         </center>
         <br>
-        <center><button onclick="clickEj2()">Botón</button></center>
+        <center><button onclick="clickEj2()">Click!</button></center>
+        <center>
+            <p id="ej2"></p>
+        </center>
     </div>
-    <div class="ej3Cont" id="fondo">
+
+    <div class="ej3Cont" id="ej3">
         <center>
             <p>Ejercicio 3</p>
         </center>
         <br>
         <center><button onclick="clickEj3()">Botón</button></center>
+        <center>
+            <div id="citas"></div>
+        </center>
     </div>
 </body>
 
